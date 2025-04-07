@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator & Milestones</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Age Calculator & Life Milestones</h1>
+
+        <div class="input-group">
+            <label for="dobInput">Enter your Date of Birth:</label>
+            <input type="date" id="dobInput">
+             </div>
+
+        <div class="input-group">
+             <label for="tobInput">Time of Birth (Optional):</label>
+             <input type="time" id="tobInput">
+             </div>
+
+        <button id="calculateBtn">Calculate Age & Milestones</button>
+
+        <div id="results" class="hidden">
+            <h2>Your Age</h2>
+            <p>In Days: <span id="ageInDays">---</span></p>
+            <p>In Hours: <span id="ageInHours">---</span></p>
+            <p>In Minutes: <span id="ageInMinutes">---</span></p>
+            <p>In Seconds: <span id="ageInSeconds">---</span></p>
+
+            <hr>
+
+            <h2>Significant Milestones</h2>
+
+            <div class="milestone-section">
+                <h3>Days</h3>
+                <ul id="daysMilestones">
+                    </ul>
+            </div>
+
+            <div class="milestone-section">
+                <h3>Hours</h3>
+                <ul id="hoursMilestones">
+                    </ul>
+            </div>
+
+             <div class="milestone-section">
+                <h3>Minutes</h3>
+                 <ul id="minutesMilestones">
+                    </ul>
+            </div>
+
+            <div class="milestone-section">
+                 <h3>Seconds</h3>
+                 <ul id="secondsMilestones">
+                    </ul>
+            </div>
+        </div>
+
+        <div id="error" class="error-message hidden">
+            Please enter a valid date of birth.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
